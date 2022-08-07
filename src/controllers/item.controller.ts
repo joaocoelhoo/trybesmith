@@ -8,6 +8,11 @@ const itemController = {
     res.status(201).json(item);
   },
 
+  async list(req: Request, res: Response) {
+    const data = await itemService.list();
+    res.status(200).json(data);
+  },
+
 };
 
 export default itemController;

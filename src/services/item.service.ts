@@ -16,6 +16,11 @@ const itemService = {
     const result = await itemModel.create(item);
     return result;
   },
+
+  async list(): Promise<Item[]> {
+    const result = await itemModel.list();
+    return result;
+  },
 };
 
 export default itemService;
