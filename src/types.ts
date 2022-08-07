@@ -5,3 +5,10 @@ export type Item = {
 };
 
 export type CreateItem = Omit<Item, 'id'>;
+
+export type User = {
+  username: string,
+  classe: string,
+  level: number,
+  password: string,
+};
